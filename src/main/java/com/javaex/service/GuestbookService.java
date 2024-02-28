@@ -27,10 +27,10 @@ public class GuestbookService {
 	}
 	
 	//삭제
-	public void exeDelete(int no, String pw) {
+	public void exeDelete(GuestVo guestVo) {
 		System.out.println("exeDeleteForm: 삭제폼");
 		
-		guestbookDao.guestDelete(no, pw);
+		guestbookDao.guestDelete(guestVo);
 	}
 	
 	//리스트
